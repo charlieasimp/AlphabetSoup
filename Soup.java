@@ -1,3 +1,8 @@
+//Name: Charlie Simpson
+//Date: 09/28/26
+//Description: This program will 
+
+
 public class Soup {
     //these are instance variables 
     private String letters;
@@ -29,13 +34,15 @@ public class Soup {
 
     //adds a word to the pool of letters known as "letters"
     public void add(String word){
-
+     letters += word;       
     }
 
 
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
-        return 'a';
+        int randomNum = (int) (Math.random()*letters.length()-1);
+        char randomLetter = letters.charAt(randomNum);
+        return randomLetter;
     }
 
 
@@ -48,7 +55,7 @@ public class Soup {
 
     //should remove the first available vowel from letters. If there are no vowels this method has no effect.
     public void removeFirstVowel(){
-        
+        // System.out.println(letters.replaceFirst("[aeiou]", ""));
     }
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
