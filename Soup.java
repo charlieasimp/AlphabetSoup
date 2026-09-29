@@ -1,6 +1,7 @@
 //Name: Charlie Simpson
 //Date: 09/28/26
-//Description: This program will 
+//Description: This program will allow the user to add strings to our variables, "letters" and "company" and get different results
+//              after calling different methods that modify them.
 
 
 public class Soup {
